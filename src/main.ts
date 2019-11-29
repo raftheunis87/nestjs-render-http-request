@@ -9,6 +9,8 @@ async function bootstrap() {
     AppModule,
   );
 
+  console.log('hallo');
+
   app.useStaticAssets(join(__dirname, '..', 'public'));
   app.setBaseViewsDir(join(__dirname, '..', 'views'));
   app.setViewEngine('hbs');
